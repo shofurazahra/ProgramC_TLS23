@@ -1,0 +1,45 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float biologi, kimia, fisika, matematika_peminatan, rata_rata;
+    char nilai_akhir;
+    
+    cout<<"Nilai Akhir Siswa Saintek"<<endl;
+    cout<<" "<<endl;
+    
+    cout<<"Nilai Biologi : ";
+    cin>>biologi;
+    
+    cout<<"Nilai Kimia : ";
+    cin>>kimia;
+    
+    cout<<"Nilai Fisika : ";
+    cin>>fisika;
+    
+    cout<<"Nilai Matematika Peminatan : ";
+    cin>>matematika_peminatan;
+    
+    rata_rata=((biologi+kimia+fisika+matematika_peminatan)/4);
+    
+    if (rata_rata>=80){
+        nilai_akhir='A';
+    }else if (rata_rata>=70){
+        nilai_akhir='B';
+    }else if (rata_rata>=60){
+        nilai_akhir='C';
+    }else if (rata_rata>=50){
+        nilai_akhir='D';
+    }else {
+        nilai_akhir='E';
+    }
+    
+    cout<<endl;
+    cout<<"Rata-Rata : "<<rata_rata<<endl;
+    cout<<"Nilai Akhir : "<<nilai_akhir<<endl;
+    
+
+    return 0;
+}
